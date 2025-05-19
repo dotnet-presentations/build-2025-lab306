@@ -49,7 +49,7 @@ We haven't made any changes to the **Api** or **MyWeatherHub** projects, but we 
 
 1. [] Ensure Docker Desktop or Podman is running.
 1. [] Start the App Host project.
-1. [] You will see both the Redis container and Redis Commander container download and start in both the dashboard and in Docker Desktop.
+1. [] You will see both the Redis container and Redis Insight container download and start in both the dashboard and in Docker Desktop.
 
     ![Redis running in dashboard and desktop](./images/redis-started.png)
 
