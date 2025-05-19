@@ -139,7 +139,7 @@ private async Task ToggleFavorite(Zone zone)
         FavoriteZones.Add(zone);
         MyWeatherContext.FavoriteZones.Add(zone);
     }
-    await DbContext.SaveChangesAsync();
+    await MyWeatherContext.SaveChangesAsync();
 }
 ```
 
