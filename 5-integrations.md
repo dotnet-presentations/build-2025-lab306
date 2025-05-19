@@ -102,10 +102,6 @@ We will add the _Output caching_ Redis client integration to our **Api** project
 
     ![Redis logs](./images/redis-logs.png)
 
-
-// TODO: REWRITE - GARNET NO LONGER WORKS THIS WAY
-// MAYBE VALKEY?
-
 ## Custom Redis Containers
 
 .NET Aspire integrations are flexible and customizable. By default, the Redis integration uses a Redis container image from Docker Hub. However, you can use your own Redis container image by providing the image name and tag after the **AddRedis** method. For example, if you have a custom Redis container image such as [Garnet](https://github.com/microsoft/garnet), you can provide the image registry, name, tag, and even the entrypoint that should be execured in the App Host as follows:
