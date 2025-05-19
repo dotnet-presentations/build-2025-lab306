@@ -15,7 +15,7 @@ In this lab, we will be working with Visual Studio 2022.  You can find the **Sam
 
 1. [] Add a new project to the solution called `ServiceDefaults`:
    - Right-click on the solution and select **Add** > **New Project**.
-   - Select the **.NET Aspire Service Defaults** project template.
+   - Search for and select the **.NET Aspire Service Defaults** project template.
    - Name the project `ServiceDefaults`.
    - Keep the default location suggested in the dialog
    - Click **Next**
