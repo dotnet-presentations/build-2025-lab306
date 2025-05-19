@@ -21,7 +21,7 @@ In this technical lab, we will explore the integration of .NET Aspire into an ex
 1. [Dashboard & Orchestration with .NET Aspire App Host](./3-dashboard-apphost.md)
 1. [Service Discovery](./4-servicediscovery.md)
 1. [.NET Aspire Integrations](./5-integrations.md)
-1. [Database Integration](./6-database.md)
+1. [Database Integration](./6-Database.md)
 
 
 At the end of this lab, you will build a web application that allows you to interact with the United States National Weather Service to get current weather reports for any location in the United States.
