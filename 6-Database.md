@@ -79,7 +79,7 @@ Note that .NET Aspire handles the connection string configuration automatically.
 1. [] Set up database initialization:
 
 ```csharp
-if (app.Environment.IsDevelopment())
+if (!app.Environment.IsDevelopment())
 {
 
   app.UseExceptionHandler("/Error", createScopeForErrors: true);
