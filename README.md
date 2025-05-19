@@ -16,12 +16,12 @@ In this technical lab, we will explore the integration of .NET Aspire into an ex
 
 ## Agenda
 
-1. [Introducing .NET Aspire and our sample application](./1-Introduction.md)
-1. [Add Smart-Defaults to our application](./2-ServiceDefaults.md)
-1. [Dashboard & Orchestration with .NET Aspire App Host](./3-Dashboard-AppHost.md)
-1. [Service Discovery](./4-ServiceDiscovery.md)
-1. [.NET Aspire Integrations](./5-Integrations.md)
-1. [Database Integration](./6-Database.md)
+1. [Introducing .NET Aspire and our sample application](./1-introduction.md)
+1. [Add Smart-Defaults to our application](./2-servicedefaults.md)
+1. [Dashboard & Orchestration with .NET Aspire App Host](./3-dashboard-apphost.md)
+1. [Service Discovery](./4-servicediscovery.md)
+1. [.NET Aspire Integrations](./5-integrations.md)
+1. [Database Integration](./6-database.md)
 
 
 At the end of this lab, you will build a web application that allows you to interact with the United States National Weather Service to get current weather reports for any location in the United States.
