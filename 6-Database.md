@@ -168,7 +168,7 @@ IQueryable<Zone> zones
 }
 ```
 
-1. [] First, add a checkbox to filter the zones list. In **Home.razor**, add this code just before the **<QuickGrid>** element:
+1. [] First, add a checkbox to filter the zones list. In **Home.razor**, add this code just before the **&lt;QuickGrid&gt;** element:
 
 ```csharp
 <div class="form-check mb-3">
