@@ -11,10 +11,10 @@ Currently, the **MyWeatherHub** is using static configuration in its *appsetting
 - Multiple configuration settings would need to be defined for http and https settings.
 - As we add more services, the configuration would become more complex.
 
-To address these issues, we will use the service discovery functionality provided by the .NET Aspire App Host project. This will allow the **MyWeatherHub** service to discover the **Api** service at runtime.
+To address these issues, we will use the service discovery functionality provided by the .NET Aspire App Host project. This will allow the **MyWeatherHub** service to discover the web address of the **Api** service at runtime.
 
 1. [] Open the **Program.cs** file in the **AppHost** project.
-1. [] Earlier we added orchestration to include several projects by using the **builder.AddProject** method. This returned an **IResourceBuilder<TResource>** that can be used to reference other resources. Let's reference the **Api** project in the **MyWeatherHub** project by updating the code:
+1. [] Earlier we added orchestration to include several projects by using the **builder.AddProject** method. This returned an **IResourceBuilder<TResource>** that can be used to reference other resources. Let's connect the **Api** project to the **MyWeatherHub** project by updating the code to include the **WithReference** method:
 
     ```csharp
     var api = builder.AddProject<Projects.Api>("api");
@@ -24,7 +24,7 @@ To address these issues, we will use the service discovery functionality provide
         .WithExternalHttpEndpoints();
     ```
 
-1. [] The **WithReference** method is used to reference the **Api** project. This will inject the required configuration to allow the **MyWeatherHub** project to discover the **Api** project at runtime via its resource name, **api**.
+1. [] The **WithReference** method directs .NET Aspire to give the **MyWeatherHub** project information about the **Api** project. This will inject the required configuration to allow the **MyWeatherHub** project to discover the **Api** project at runtime via its resource name, **api**.
 1. [] If you later choose to deploy this app, you'd need the call to **WithExternalHttpEndpoints** to ensure that it's public to the outside world.
 
 ## Enabling Service Discovery in MyWeatherHub
