@@ -26,7 +26,9 @@ Before continuing, consider some common terminology used in .NET Aspire:
 
 ## Add Project References
 
-1. [] Add a reference to the **Api** and **MyWeatherHub** projects in the new **AppHost** project:
+![.Add project reference context menu](./images/3-AddReference.png)
+
+1. [] Add project references to the **AppHost** project:
    - Right-click on the **AppHost** project and select **Add** > **Project Reference...**.
    - Check the **Api** and **MyWeatherHub** projects and click **OK**.
 
