@@ -79,13 +79,13 @@ Note that .NET Aspire handles the connection string configuration automatically.
 1. [] Set up database initialization:
 
 ```csharp
-if (app.Environment.IsDevelopment())
+if (!app.Environment.IsDevelopment())
 {
 
   app.UseExceptionHandler("/Error", createScopeForErrors: true);
   // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
   app.UseHsts();
-
+} else {
   using (var scope = app.Services.CreateScope())
   {
       var context = scope.ServiceProvider.GetRequiredService<MyWeatherContext>();
@@ -139,7 +139,7 @@ private async Task ToggleFavorite(Zone zone)
         FavoriteZones.Add(zone);
         MyWeatherContext.FavoriteZones.Add(zone);
     }
-    await DbContext.SaveChangesAsync();
+    await MyWeatherContext.SaveChangesAsync();
 }
 ```
 
@@ -168,7 +168,7 @@ IQueryable<Zone> zones
 }
 ```
 
-1. [] First, add a checkbox to filter the zones list. In **Home.razor**, add this code just before the **<QuickGrid>** element:
+1. [] First, add a checkbox to filter the zones list. In **Home.razor**, add this code just before the **&lt;QuickGrid&gt;** element:
 
 ```csharp
 <div class="form-check mb-3">
