@@ -15,7 +15,7 @@ In this lab, we will be working with Visual Studio 2022.  You can find the **Sam
 
 1. [] Add a new project to the solution called `ServiceDefaults`:
    - Right-click on the solution and select **Add** > **New Project**.
-   - Select the **.NET Aspire Service Defaults** project template.
+   - Search for and select the **.NET Aspire Service Defaults** project template.
    - Name the project `ServiceDefaults`.
    - Keep the default location suggested in the dialog
    - Click **Next**
@@ -44,7 +44,7 @@ In this lab, we will be working with Visual Studio 2022.  You can find the **Sam
 1. [] In both the **Api** and **MyWeatherHub** projects, update their **Program.cs** files to add a reference to the new Default Endpoints added by **ServiceDefaults**.  Add this line just before the last `Map*` command in the **Program.cs** file:
 
  ```csharp
- builder.MapDefaultEndpoints();
+ app.MapDefaultEndpoints();
  ```
 
 ## Run the application
@@ -56,7 +56,7 @@ In this lab, we will be working with Visual Studio 2022.  You can find the **Sam
 2. [] Test the application by navigating to the following URLs:
    - `https://localhost:7032/openapi/v1.json` - API
    - `https://localhost:7274/` - MyWeatherHub
-3. [] You should see the Swagger UI for the API and the MyWeatherHub home page.
+3. [] You should see the API and the MyWeatherHub home page.
    1. [] You can also view the health checks for the API by navigating to `https://localhost:7032/health`.
 4. [] You can also view the health checks for the MyWeatherHub by navigating to `https://localhost:7274/health`.
 5. [] View the logs in the terminal to see the health checks and other telemetry data such as resiliency with Polly:
