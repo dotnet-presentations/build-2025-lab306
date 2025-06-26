@@ -279,3 +279,18 @@ Data API Builder (DAB) automatically generates REST and GraphQL endpoints from y
 ## Summary
 
 In this module, we added PostgreSQL database support to our application using .NET Aspire's database integration features. We used Entity Framework Core for data access and configured our application to work with both local development and cloud-hosted databases.
+
+---
+
+## 🎉 Congratulations!
+
+You've completed the .NET Aspire lab! You've successfully built a cloud-native application with:
+- Service defaults for observability and resiliency
+- App Host orchestration with dashboard
+- Service discovery for flexible communication  
+- Redis caching integration for performance
+- PostgreSQL database integration with EF Core
+
+Your application is now ready for cloud deployment with all the benefits of .NET Aspire!
+
+**[Return to Introduction](1-Introduction.md)** | **[View Lab Summary](../lab-end-readme.md)**

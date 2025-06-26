@@ -87,3 +87,11 @@ This graph is generated based on the references and relationships you configure 
 ## Summary
 
 We learned how to orchestrate our two projects with the .NET Aspire AppHost in this module.  The AppHost allows us to define the relationship between these two projects and introduce the .NET Aspire dashboard to give us visbility into the application system these two projects provide.  We can now maintain our applications easier with the telemetry and visibility provided on the dashboard.  This will become important as our application grows beyond just these two projects.
+
+---
+
+## 🚀 Next Step
+
+Excellent! You've set up the App Host and dashboard. Now let's improve our application by implementing service discovery to make service communication more flexible.
+
+**[Continue to Service Discovery →](4-servicediscovery.md)**

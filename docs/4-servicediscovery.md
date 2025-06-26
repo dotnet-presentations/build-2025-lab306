@@ -88,3 +88,11 @@ This was just the start of what we can do with service discovery and .NET Aspire
 ## Learn More
 
 You can learn more about advanced usage and configuration of service discovery in the [.NET Aspire Service Discovery](https://learn.microsoft.com/dotnet/aspire/service-discovery/overview) documentation.
+
+---
+
+## 🚀 Next Step
+
+Perfect! Service discovery is now configured. Let's enhance our application further by adding .NET Aspire integrations and implementing Redis caching for better performance.
+
+**[Continue to Integrations →](5-integrations.md)**

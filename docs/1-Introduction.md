@@ -33,3 +33,11 @@ In this workshop, we're going to take a simple Blazor Interactive Server web app
 It can be a little tricky to get the current application running properly with two web applications that need to be started in the correct order, that need to locate each other, and have no real logging support for when connectivity problems occur between the website, the Api, and the National Weather Service.
 
 This can be done in Visual Studio by configuring multiple startup projects, or running the Api before starting the web application at the command-line.  Give it a try with the sample code provided and search for an American city or state and the app should report weather for you.  Be sure to watch the console for both the web application and the api to see the reports of interaction between the two projects.
+
+---
+
+## 🚀 Next Step
+
+Ready to get started? Let's add .NET Aspire service defaults to our application!
+
+**[Continue to Service Defaults →](2-servicedefaults.md)**

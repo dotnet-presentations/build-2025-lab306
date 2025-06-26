@@ -76,3 +76,11 @@ In this lab, we will be working with Visual Studio 2022.  You can find the **Sam
 ## Summary
 
 Introducing .NET Aspire smart defaults with the **ServiceDefaults** project template allows us to see the health of our applicaton with standard health-checks and resiliency with libraries like Polly.  We saw that introducing the retry mechanisms with Polly made our Api more robust and delivered more reliable results for our web users.
+
+---
+
+## 🚀 Next Step
+
+Great work! Now let's create the App Host project and set up the .NET Aspire dashboard for better orchestration and observability.
+
+**[Continue to Dashboard & App Host →](3-dashboard-apphost.md)**
