@@ -18,7 +18,7 @@ Before continuing, consider some common terminology used in .NET Aspire:
    - Keep the default location suggested in the dialog
    - Click **Next**
    - Ensure .NET 9.0 is selected as well as 'Configure for HTTPS' is checked
-   - .NET Aspire version should be set to **9.2**
+   - .NET Aspire version should be set to **9.3**
    - Click **Create**
 
     *Visual Studio*

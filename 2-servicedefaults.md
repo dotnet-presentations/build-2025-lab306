@@ -20,7 +20,7 @@ In this lab, we will be working with Visual Studio 2022.  You can find the **Sam
    - Keep the default location suggested in the dialog
    - Click **Next**
    - Select **.NET 9.0** for the framework version
-   - .NET Aspire version should be set to **9.2**
+   - .NET Aspire version should be set to **9.3**
    - Click **Create**.
 
     *Visual Studio*
