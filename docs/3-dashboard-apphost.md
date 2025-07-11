@@ -22,11 +22,11 @@ Before continuing, consider some common terminology used in .NET Aspire:
    - Click **Create**
 
     *Visual Studio*
-    ![Visual Studio dialog to add a app host project](./images/vs-add-apphost.png)
+    ![Visual Studio dialog to add a app host project](../images/vs-add-apphost.png)
 
 ## Add Project References
 
-![.Add project reference context menu](./images/3-AddReference.png)
+![.Add project reference context menu](../images/3-AddReference.png)
 
 1. [] Add project references to the **AppHost** project:
    - Right-click on the **AppHost** project and select **Add** > **Project Reference...**.
@@ -52,18 +52,18 @@ Before continuing, consider some common terminology used in .NET Aspire:
 2. [] Run the App Host using the **Run and Debug** panel in Visual Studio Code or Visual Studio.
 3. [] The .NET Aspire Dashboard will open in your default browser and display the resources and dependencies of your application.
 
-    ![.NET Aspire Dashboard](./images/dashboard.png)
+    ![.NET Aspire Dashboard](../images/dashboard.png)
 
 4. [] Open the weather page by clicking the Endpoint for the **MyWeatherHub** project resource which will be `https://localhost:7274`.
 5. [] Notice that both the **Api** and **MyWeatherHub** projects are running and can communicate with each other the same way as before using configuration settings.
 6. [] Back on the Aspire Dashboard, click on the **Console** button to see the console logs from the **Api** and **MyWeatherHub** projects.
 7. [] Select the **Traces** tab and select **View** on a trace where the API is being called.
 
-    ![.NET Aspire Dashboard](./images/dashboard-trace.png)
+    ![.NET Aspire Dashboard](../images/dashboard-trace.png)
 
 8. [] Explore the **Metrics** tab to see the metrics for the **Api** and **MyWeatherHub** projects.
 
-    ![.NET Aspire Dashboard](./images/dashboard-metrics.png)
+    ![.NET Aspire Dashboard](../images/dashboard-metrics.png)
 
 ## Create an error
 
@@ -72,7 +72,7 @@ Before continuing, consider some common terminology used in .NET Aspire:
 1. [] On the **MyWeatherApp** website, click on several different cities to generate errors. Usually, clicking on 5 different cities will generate at least one error.
 1. [] After generating the errors, the **Structured** tab will automatically update on the dashboard and display the errors.
 
-    ![.NET Aspire Dashboard](./images/dashboard-error.png)
+    ![.NET Aspire Dashboard](../images/dashboard-error.png)
 
 1. [] Click on the **Trace** or the **Details** to see the error message and stack trace.
 
@@ -89,7 +89,7 @@ One of the exciting new features in .NET Aspire 9.3 is the integration with GitH
 2. [] Click on the Copilot icon when viewing error details or traces to get AI-powered insights about the issues.
 3. [] GitHub Copilot can help explain error messages, suggest potential fixes, and provide guidance on debugging distributed application problems.
 
-    ![GitHub Copilot in .NET Aspire Dashboard](./images/dashboard-copilot.png)
+    ![GitHub Copilot in .NET Aspire Dashboard](../images/dashboard-copilot.png)
 
 4. [] Try asking Copilot questions about the errors you've generated, such as:
    - "What might be causing this HTTP 500 error?"
@@ -102,7 +102,7 @@ One of the exciting new features in .NET Aspire 9.3 is the integration with GitH
 
 We saw the table of resources in the .NET Aspire dashboard and that's a nice list of our resources, and we'll see that grow as our application system starts to utilize more resources.  Additionally, there is a **Graph** view of resources available by clicking the **Graph** text just above the table.
 
-![.NET Aspire Dashboard Resource Graph](./images/dashboard-graph.png)
+![.NET Aspire Dashboard Resource Graph](../images/dashboard-graph.png)
 
 This graph is generated based on the references and relationships you configure for your application.
 
