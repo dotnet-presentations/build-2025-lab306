@@ -2,6 +2,8 @@
 
 Welcome to our lab introducing .NET Aspire.  Over the course of this material we will learn what .NET Aspire is, how to add it to an existing application, and how to use .NET Aspire to meet our growing application needs.
 
+> **Note:** This workshop is designed for .NET Aspire 9.3, which includes enhanced dashboard features, improved Azure integrations, better CLI support, and streamlined container configuration. .NET Aspire 9.3 supports both .NET 8.0 (LTS) and .NET 9.0 (STS).
+
 ## What are the problems .NET Aspire is going to solve
 
 In working with customers, the .NET team recognized that applications have a common pattern of needs:

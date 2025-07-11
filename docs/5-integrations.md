@@ -17,6 +17,7 @@ Let's add Redis to our App Host:
 1. [] Add the `Aspire.Hosting.Redis` NuGet package to the **AppHost** project.
    1. Right-click the **AppHost** project in the Solution Explorer and choosing **Manage NuGet Packages**.  
    2. Browse for the **Aspire.Hosting.Redis** package and click the install button in the description pane.
+   3. Ensure you're installing version **9.3.x** or later to get the latest .NET Aspire 9.3 features.
 2. [] Open the **Program.cs** file in the **AppHost** project.
 3. [] Add the following code under **var builder = DistributedApplication.CreateBuilder(args);**
 
@@ -38,6 +39,16 @@ Let's add Redis to our App Host:
     var cache = builder.AddRedis("cache")
                        .WithRedisInsight();
     ```
+
+> **🆕 .NET Aspire 9.3 Container Configuration:** .NET Aspire 9.3 introduces enhanced container configuration methods like `WithHostPort()`, `WithPassword()`, and `WithUserName()` for easier Redis setup. For example:
+> ```csharp
+> var redisPwd = builder.AddParameter("redis-pwd", secret: true);
+> 
+> var cache = builder.AddRedis("cache")
+>                    .WithHostPort(6379)
+>                    .WithPassword(redisPwd)
+>                    .WithRedisInsight();
+> ```
 
 ## Run the application
 

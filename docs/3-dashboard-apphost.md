@@ -76,6 +76,28 @@ Before continuing, consider some common terminology used in .NET Aspire:
 
 1. [] Click on the **Trace** or the **Details** to see the error message and stack trace.
 
+### GitHub Copilot Integration
+
+One of the exciting new features in .NET Aspire 9.3 is the integration with GitHub Copilot directly in the dashboard. This AI-powered assistance helps you understand and troubleshoot issues in your distributed application.
+
+> **📋 Prerequisites:** To use GitHub Copilot in the Aspire dashboard, you'll need:
+> - An active GitHub Copilot subscription (Individual, Business, or Enterprise)
+> - Visual Studio 2022 or Visual Studio Code with GitHub Copilot extension installed
+> - The dashboard launched from your development environment
+
+1. [] After generating errors in the previous steps, look for the **GitHub Copilot** button in the dashboard interface.
+2. [] Click on the Copilot icon when viewing error details or traces to get AI-powered insights about the issues.
+3. [] GitHub Copilot can help explain error messages, suggest potential fixes, and provide guidance on debugging distributed application problems.
+
+    ![GitHub Copilot in .NET Aspire Dashboard](./images/dashboard-copilot.png)
+
+4. [] Try asking Copilot questions about the errors you've generated, such as:
+   - "What might be causing this HTTP 500 error?"
+   - "How can I improve the resilience of this API call?"
+   - "What telemetry should I look at to debug this issue?"
+
+> **💡 Pro Tip:** The GitHub Copilot integration in the Aspire dashboard leverages the full context of your application's telemetry data, making its suggestions more relevant and actionable for distributed application scenarios.
+
 ## The Dashboard Resource Graph
 
 We saw the table of resources in the .NET Aspire dashboard and that's a nice list of our resources, and we'll see that grow as our application system starts to utilize more resources.  Additionally, there is a **Graph** view of resources available by clicking the **Graph** text just above the table.
@@ -83,6 +105,8 @@ We saw the table of resources in the .NET Aspire dashboard and that's a nice lis
 ![.NET Aspire Dashboard Resource Graph](./images/dashboard-graph.png)
 
 This graph is generated based on the references and relationships you configure for your application.
+
+> **🆕 .NET Aspire 9.3 Dashboard Features:** The dashboard now includes enhanced interactivity features like right-click context menus on resource nodes, improved resource URL integration in console logs, and friendly names for single-replica resources. You can right-click any resource in the graph to quickly access logs, traces, metrics, or external URLs.
 
 ## Summary
 
