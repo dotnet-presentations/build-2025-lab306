@@ -13,6 +13,7 @@ In this technical lab, we will explore the integration of .NET Aspire into an ex
 - Visual Studio 2022 with .NET Aspire workload installed OR Visual Studio Code with C# extensions installed
 - .NET 9.0 SDK installed
 - Docker, Docker Desktop, OR Podman installed
+- **.NET Aspire 9.3** or later (this workshop is optimized for .NET Aspire 9.3 features)
 
 ## Agenda
 
@@ -25,6 +26,8 @@ In this technical lab, we will explore the integration of .NET Aspire into an ex
 
 
 At the end of this lab, you will build a web application that allows you to interact with the United States National Weather Service to get current weather reports for any location in the United States.
+
+> **🆕 .NET Aspire 9.3 Features:** This workshop has been updated to leverage .NET Aspire 9.3 features including enhanced dashboard interactivity, improved container configuration, better Azure integrations, and streamlined CLI support.
 
 ## Session Resources 
 

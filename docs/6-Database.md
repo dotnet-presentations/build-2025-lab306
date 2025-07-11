@@ -12,6 +12,7 @@ In this module, we will integrate a PostgreSQL database with our application. We
 
    1. Right-click the **AppHost** project in the Solution Explorer and choosing **Manage NuGet Packages**.  
    2. Browse for the `Aspire.Hosting.PostgreSQL` package and click the install button in the description pane.
+   3. Ensure you're installing version **9.3.x** or later to get the latest .NET Aspire 9.3 features.
 
 1. [] Update the AppHost's Program.cs to add PostgreSQL by adding these lines after the api is declared:
 

@@ -17,6 +17,7 @@ Let's add Redis to our App Host:
 1. [] Add the `Aspire.Hosting.Redis` NuGet package to the **AppHost** project.
    1. Right-click the **AppHost** project in the Solution Explorer and choosing **Manage NuGet Packages**.  
    2. Browse for the **Aspire.Hosting.Redis** package and click the install button in the description pane.
+   3. Ensure you're installing version **9.3.x** or later to get the latest .NET Aspire 9.3 features.
 2. [] Open the **Program.cs** file in the **AppHost** project.
 3. [] Add the following code under **var builder = DistributedApplication.CreateBuilder(args);**
 
@@ -39,6 +40,16 @@ Let's add Redis to our App Host:
                        .WithRedisInsight();
     ```
 
+> **🆕 .NET Aspire 9.3 Container Configuration:** .NET Aspire 9.3 introduces enhanced container configuration methods like `WithHostPort()`, `WithPassword()`, and `WithUserName()` for easier Redis setup. For example:
+> ```csharp
+> var redisPwd = builder.AddParameter("redis-pwd", secret: true);
+> 
+> var cache = builder.AddRedis("cache")
+>                    .WithHostPort(6379)
+>                    .WithPassword(redisPwd)
+>                    .WithRedisInsight();
+> ```
+
 ## Run the application
 
 We haven't made any changes to the **Api** or **MyWeatherHub** projects, but we can see the Redis cache start when we start the App Host.
@@ -51,7 +62,7 @@ We haven't made any changes to the **Api** or **MyWeatherHub** projects, but we 
 1. [] Start the App Host project.
 1. [] You will see both the Redis container and Redis Insight container download and start in both the dashboard and in Docker Desktop.
 
-    ![Redis running in dashboard and desktop](./images/redis-started.png)
+    ![Redis running in dashboard and desktop](../images/redis-started.png)
 
 ## Integrate Output Caching in API
 
@@ -92,15 +103,15 @@ We will add the _Output caching_ Redis client integration to our **Api** project
 1. [] Start the App Host project and open the **MyWeatherHub** project from the dashboard.
 1. [] Click on a city and then click on it again. You will see that the response is cached and the second request is much faster than the first one under the **Traces** tab.
 
-    ![Output caching in action](./images/output-caching.png)
+    ![Output caching in action](../images/output-caching.png)
 
 1. [] You can also see the cached response in Redis Insight. Open Redis Insight by clicking on the **cache-insight** endpoint in the dashboard. Under stats you will see connections and commands processed.
 
-    ![Redis Insight](./images/redis-insight.png)
+    ![Redis Insight](../images/redis-insight.png)
 
 1. [] In addition, you can see logs for the Redis cache and Redis Insight in the **Console** tab.
 
-    ![Redis logs](./images/redis-logs.png)
+    ![Redis logs](../images/redis-logs.png)
 
 ## Custom Redis Containers
 
@@ -118,11 +129,11 @@ var cache = builder.AddRedis("cache")
 
 1. [] Run the application and you will now see Garnet running in the dashboard and in Docker Desktop.
 
-    ![Garnet running in dashboard and desktop](./images/garnet-started.png)
+    ![Garnet running in dashboard and desktop](../images/garnet-started.png)
 
 2. [] You can also see the logs for Garnet in the **Console** tab.
 
-    ![Garnet logs](./images/garnet-logs.png)
+    ![Garnet logs](../images/garnet-logs.png)
 
 ## Summary
 

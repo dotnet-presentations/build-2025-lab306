@@ -24,7 +24,7 @@ In this lab, we will be working with Visual Studio 2022.  You can find the **Sam
    - Click **Create**.
 
     *Visual Studio*
-    ![Visual Studio dialog to add a service defaults project](./images/vs-add-servicedefaults.png)
+    ![Visual Studio dialog to add a service defaults project](../images/vs-add-servicedefaults.png)
 
 ## Configure Service Defaults
 
@@ -51,7 +51,7 @@ In this lab, we will be working with Visual Studio 2022.  You can find the **Sam
 
 1. [] Run the application using a multiple-project launch configuration in Visual Studio:
    - Right click on the **MyWeatherHub** solution and go to properties. Select the **Api** and **MyWeatherHub** as startup projects, select **OK**.
-     - ![Visual Studio solution properties](./images/vs-multiproject.png)
+     - ![Visual Studio solution properties](../images/vs-multiproject.png)
      - Click **Start** to start and debug both projects.
 2. [] Test the application by navigating to the following URLs:
    - `https://localhost:7032/openapi/v1.json` - API
