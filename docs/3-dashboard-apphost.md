@@ -110,7 +110,7 @@ This graph is generated based on the references and relationships you configure 
 
 ## Summary
 
-We learned how to orchestrate our two projects with the .NET Aspire AppHost in this module.  The AppHost allows us to define the relationship between these two projects and introduce the .NET Aspire dashboard to give us visbility into the application system these two projects provide.  We can now maintain our applications easier with the telemetry and visibility provided on the dashboard.  This will become important as our application grows beyond just these two projects.
+We learned how to orchestrate our two projects with the .NET Aspire AppHost in this module.  The AppHost allows us to define the relationship between these two projects and introduce the .NET Aspire dashboard to give us visibility into the application system these two projects provide.  We can now maintain our applications easier with the telemetry and visibility provided on the dashboard.  This will become important as our application grows beyond just these two projects.
 
 ---
 
